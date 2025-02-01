@@ -530,7 +530,7 @@ public class SAHv1 {
                 writer.write(route.get(route.size() - 1) + "\n");
             }
 
-            writer.write("\n------------------------------\n");
+            writer.write("------------------------------\n");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

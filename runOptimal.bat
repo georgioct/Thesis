@@ -1,8 +1,8 @@
 @echo off
 
 REM 
-set PROJECT_DIRECTORY=C:\Users\Giorgos\Desktop\VRP\src
-set CPLEX_JAR=C:\Users\Giorgos\Desktop\VRP\lib\cplex.jar
+set PROJECT_DIRECTORY=C:\Users\Giorgos\Desktop\Thesis\src
+set CPLEX_JAR=C:\Users\Giorgos\Desktop\Thesis\lib\cplex.jar
 REM
 
 cd %PROJECT_DIRECTORY%
