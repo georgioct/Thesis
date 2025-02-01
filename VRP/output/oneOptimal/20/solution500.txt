@@ -1,0 +1,33 @@
+Total execution time: 60.02065 minutes.
+
+Optimal solution found: 11000.0
+Transportation Cost: 0.0
+Penalty Cost: 11000.0
+
+
+Total number of parcels delivered: 0 / 500
+
+Arriving time on each SP:
+Smart Point 0: 0.0
+Smart Point 1: 0.0
+Smart Point 2: 0.0
+Smart Point 3: 0.0
+Smart Point 4: 0.0
+Smart Point 5: 0.0
+Smart Point 6: 0.0
+Smart Point 7: 0.0
+Smart Point 8: 0.0
+Smart Point 9: 0.0
+Smart Point 10: 0.0
+Smart Point 11: 0.0
+Smart Point 12: 0.0
+Smart Point 13: 0.0
+Smart Point 14: 0.0
+Smart Point 15: 0.0
+Smart Point 16: 0.0
+Smart Point 17: 0.0
+Smart Point 18: 0.0
+Smart Point 19: 0.0
+Smart Point 20: 0.0
+
+Total number of vehicles used: 0
