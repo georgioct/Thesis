@@ -1,0 +1,118 @@
+Total execution time: 0.02215 minutes.
+
+Optimal solution found: 247.4
+Transportation Cost: 227.4
+Penalty Cost: 20.0
+
+Parcel ID: 1001 -> 1
+Parcel ID: 1002 -> 1
+Parcel ID: 1003 -> 1
+Parcel ID: 1004 -> 1
+Parcel ID: 1005 -> 1
+Parcel ID: 1006 -> 1
+Parcel ID: 1007 -> 1
+Parcel ID: 1008 -> 1
+Parcel ID: 1009 -> 1
+Parcel ID: 1010 -> 1
+Parcel ID: 1011 -> 2
+Parcel ID: 1012 -> 2
+Parcel ID: 1013 -> 2
+Parcel ID: 1014 -> 2
+Parcel ID: 1015 -> 2
+Parcel ID: 1016 -> 2
+Parcel ID: 1017 -> 2
+Parcel ID: 1018 -> 2
+Parcel ID: 1019 -> 2
+Parcel ID: 1020 -> 2
+Parcel ID: 1021 -> 3
+Parcel ID: 1022 -> 3
+Parcel ID: 1023 -> 3
+Parcel ID: 1024 -> 3
+Parcel ID: 1025 -> 3
+Parcel ID: 1026 -> 3
+Parcel ID: 1027 -> 3
+Parcel ID: 1028 -> 3
+Parcel ID: 1029 -> 3
+Parcel ID: 1030 -> 3
+Parcel ID: 1031 -> 4
+Parcel ID: 1032 -> 4
+Parcel ID: 1033 -> 4
+Parcel ID: 1034 -> 4
+Parcel ID: 1035 -> 4
+Parcel ID: 1036 -> 4
+Parcel ID: 1037 -> 4
+Parcel ID: 1038 -> 4
+Parcel ID: 1039 -> 4
+Parcel ID: 1040 -> 4
+Parcel ID: 1041 -> 5
+Parcel ID: 1042 -> 5
+Parcel ID: 1043 -> 5
+Parcel ID: 1044 -> 5
+Parcel ID: 1046 -> 5
+Parcel ID: 1047 -> 5
+Parcel ID: 1048 -> 5
+Parcel ID: 1049 -> 5
+Parcel ID: 1050 -> 5
+Parcel ID: 1051 -> 1
+Parcel ID: 1052 -> 1
+Parcel ID: 1053 -> 1
+Parcel ID: 1054 -> 1
+Parcel ID: 1055 -> 1
+Parcel ID: 1056 -> 1
+Parcel ID: 1057 -> 1
+Parcel ID: 1058 -> 1
+Parcel ID: 1059 -> 1
+Parcel ID: 1060 -> 1
+Parcel ID: 1061 -> 2
+Parcel ID: 1062 -> 2
+Parcel ID: 1063 -> 2
+Parcel ID: 1064 -> 2
+Parcel ID: 1065 -> 2
+Parcel ID: 1066 -> 2
+Parcel ID: 1067 -> 2
+Parcel ID: 1068 -> 2
+Parcel ID: 1069 -> 2
+Parcel ID: 1070 -> 2
+Parcel ID: 1071 -> 3
+Parcel ID: 1072 -> 3
+Parcel ID: 1073 -> 3
+Parcel ID: 1074 -> 3
+Parcel ID: 1075 -> 3
+Parcel ID: 1076 -> 3
+Parcel ID: 1077 -> 3
+Parcel ID: 1078 -> 3
+Parcel ID: 1079 -> 3
+Parcel ID: 1080 -> 3
+Parcel ID: 1081 -> 4
+Parcel ID: 1082 -> 4
+Parcel ID: 1083 -> 4
+Parcel ID: 1084 -> 4
+Parcel ID: 1085 -> 4
+Parcel ID: 1086 -> 4
+Parcel ID: 1087 -> 4
+Parcel ID: 1088 -> 4
+Parcel ID: 1089 -> 4
+Parcel ID: 1090 -> 4
+Parcel ID: 1091 -> 5
+Parcel ID: 1092 -> 5
+Parcel ID: 1093 -> 5
+Parcel ID: 1094 -> 5
+Parcel ID: 1096 -> 5
+Parcel ID: 1097 -> 5
+Parcel ID: 1098 -> 5
+Parcel ID: 1100 -> 5
+
+Total number of parcels delivered: 97 / 100
+
+Arriving time on each SP:
+Smart Point 0: 0.0
+Smart Point 1: 27.0
+Smart Point 2: 21.0
+Smart Point 3: 91.0
+Smart Point 4: 56.0
+Smart Point 5: 59.0
+
+Total number of vehicles used: 2
+
+Route 1: 0->1->4->0
+Route 2: 0->2->5->3->0
