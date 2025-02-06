@@ -277,8 +277,9 @@ public class VRPv2 {
 
             // main objective = min { transportationObjective + vehicleObjective + penaltyObjective } //
             cplex.addMinimize(cplex.sum(
-                    penaltyObjective,
-                    cplex.sum(cplex.prod(runningCost, transportationObjective),vehicleObjective))
+                    cplex.sum(cplex.prod(runningCost, transportationObjective),vehicleObjective),
+                    penaltyObjective
+                    )
             );
 
             ////////////////////////////////////////////////////////////////////////////////////////////////
