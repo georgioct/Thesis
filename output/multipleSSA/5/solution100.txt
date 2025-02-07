@@ -108,15 +108,14 @@ ID: 1100 -> 3
 --------Arriving Times--------
 SmartPoint 1: 26.4
 SmartPoint 2: 20.9
-SmartPoint 3: 18.5
+SmartPoint 3: 60.2
 SmartPoint 4: 61.3
-SmartPoint 5: 55.9
+SmartPoint 5: 88.0
 ------------------------------
 
 ------------Routes------------
-Route 1: 0->1->4->0
-Route 2: 0->2->0
-Route 3: 0->3->5->0
+Route 1: 0->1->4->5->0
+Route 2: 0->2->3->0
 ------------------------------
 
-Transportation Cost: 302.4
+Transportation Cost: 233.7

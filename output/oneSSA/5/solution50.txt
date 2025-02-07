@@ -1,4 +1,4 @@
-Total execution time: 0.0017 minutes.
+Total execution time: 0.0016 minutes.
 
 Parcels delivered: 50 / 50
 
@@ -8,12 +8,12 @@ ID: 1002 -> 1
 ID: 1003 -> 1
 ID: 1004 -> 1
 ID: 1005 -> 1
-ID: 1006 -> 3
+ID: 1006 -> 1
 ID: 1007 -> 1
 ID: 1008 -> 1
 ID: 1009 -> 1
 ID: 1010 -> 1
-ID: 1011 -> 4
+ID: 1011 -> 2
 ID: 1012 -> 2
 ID: 1013 -> 2
 ID: 1014 -> 2
@@ -40,10 +40,10 @@ ID: 1034 -> 4
 ID: 1035 -> 4
 ID: 1036 -> 4
 ID: 1037 -> 4
-ID: 1038 -> 3
+ID: 1038 -> 4
 ID: 1039 -> 4
 ID: 1040 -> 4
-ID: 1041 -> 2
+ID: 1041 -> 5
 ID: 1042 -> 5
 ID: 1043 -> 5
 ID: 1044 -> 5
@@ -59,8 +59,8 @@ ID: 1050 -> 5
 SmartPoint 1: 26.4
 SmartPoint 2: 20.9
 SmartPoint 3: 50.2
-SmartPoint 4: 44.3
-SmartPoint 5: 76.6
+SmartPoint 4: 45.3
+SmartPoint 5: 74.6
 ------------------------------
 
 ------------Routes------------
