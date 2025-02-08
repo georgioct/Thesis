@@ -349,8 +349,8 @@ public class SSAHv1 {
             }
         }
 
-        // we run the stochastic saving 100 times to get the  best result //
-        for (int iteration = 0; iteration < 100; iteration++) {
+        // we run the stochastic saving 1000 times to get the  best result //
+        for (int iteration = 0; iteration < 1000; iteration++) {
 
             // Create a deep copy and not a shallow because we are using Lists //
             HashMap<Integer, List<Integer>> copyRoutes = new HashMap<>();

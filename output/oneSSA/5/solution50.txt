@@ -57,15 +57,14 @@ ID: 1050 -> 5
 
 --------Arriving Times--------
 SmartPoint 1: 26.4
-SmartPoint 2: 20.9
-SmartPoint 3: 50.2
-SmartPoint 4: 45.3
-SmartPoint 5: 74.6
+SmartPoint 2: 62.2
+SmartPoint 3: 91.5
+SmartPoint 4: 124.0
+SmartPoint 5: 151.7
 ------------------------------
 
 ------------Routes------------
-Route 1: 0->1->4->0
-Route 2: 0->2->3->5->0
+Route 1: 0->1->2->3->4->5->0
 ------------------------------
 
-Transportation Cost: 232.3
+Transportation Cost: 183.7

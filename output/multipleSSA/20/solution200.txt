@@ -1,4 +1,4 @@
-Total execution time: 0.0018 minutes.
+Total execution time: 0.0019 minutes.
 
 Parcels delivered: 200 / 200
 
@@ -211,31 +211,31 @@ SmartPoint 2: 20.9
 SmartPoint 3: 18.5
 SmartPoint 4: 41.3
 SmartPoint 5: 22.0
-SmartPoint 6: 69.8
-SmartPoint 7: 48.4
+SmartPoint 6: 16.6
+SmartPoint 7: 38.6
 SmartPoint 8: 22.0
-SmartPoint 9: 9.1
-SmartPoint 10: 17.4
-SmartPoint 11: 31.9
-SmartPoint 12: 90.2
-SmartPoint 13: 58.2
-SmartPoint 14: 53.5
-SmartPoint 15: 51.1
-SmartPoint 16: 83.8
-SmartPoint 17: 72.6
-SmartPoint 18: 83.6
-SmartPoint 19: 52.0
-SmartPoint 20: 37.4
+SmartPoint 9: 41.3
+SmartPoint 10: 71.0
+SmartPoint 11: 41.8
+SmartPoint 12: 64.7
+SmartPoint 13: 52.9
+SmartPoint 14: 9.2
+SmartPoint 15: 88.8
+SmartPoint 16: 63.8
+SmartPoint 17: 48.8
+SmartPoint 18: 36.0
+SmartPoint 19: 82.3
+SmartPoint 20: 96.9
 ------------------------------
 
 ------------Routes------------
-Route 1: 0->1->4->6->12->0
-Route 2: 0->2->19->0
-Route 3: 0->3->11->13->18->0
-Route 4: 0->5->7->0
-Route 5: 0->8->14->16->0
-Route 6: 0->9->20->0
-Route 7: 0->10->15->17->0
+Route 1: 0->1->4->10->20->0
+Route 2: 0->2->11->16->0
+Route 3: 0->3->9->12->15->0
+Route 4: 0->5->13->19->0
+Route 5: 0->6->7->0
+Route 6: 0->8->17->0
+Route 7: 0->14->18->0
 ------------------------------
 
-Transportation Cost: 814.1
+Transportation Cost: 802.5
