@@ -333,7 +333,7 @@ public class SAHv1 {
 
                 // making sure we add savings(i,j) only if we deliver to smartPoint i and smartPoint j //
                 if (routes.containsKey(i) & routes.containsKey(j)) {
-                    double save = travelMatrix[depot][i] + travelMatrix[depot][j] - travelMatrix[i][j];
+                    double save = travelMatrix[depot][i] + travelMatrix[depot][j] - travelMatrix[i][j] + vehicleCost;
                     // if saving < 0, there is no reason to merge the pair in one route //
                     if (save > 0)
                         savingsList.add(new Saving(i, j,save));
