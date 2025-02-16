@@ -41,7 +41,7 @@ public class VRPv3 {
     private double loadingCost;
     private static final int sizes = 3;
     private static final int deliveryLocations = 3;
-    private static int numberRoutes = 1;
+    private int numberRoutes = 1;
 
     /**
      * Constructor of this class.
@@ -62,8 +62,8 @@ public class VRPv3 {
      */
     private void execute(){
         loadData();
-        double[][] z = solveDelivery();
-        solveVRP(z);
+        double[][] delivery = solveDelivery();
+        solveVRP(delivery);
     }
 
     /**
@@ -151,7 +151,7 @@ public class VRPv3 {
      */
     private double[][] solveDelivery() {
 
-        // decision variable z  //
+        // contains the delivery location for each parcel  //
         double[][] matrix = new double[parcels][smartPoints];
 
         ///////////////////////////////////////// Helper Structures ////////////////////////////////////////////
@@ -205,16 +205,16 @@ public class VRPv3 {
 
             /////////////////////////////////// Setting Up Main Objective //////////////////////////////////////
 
-            IloNumVar[][] z = new IloNumVar[parcels][smartPoints];
+            IloNumVar[][] delivery = new IloNumVar[parcels][smartPoints];
 
             for (int q = 0; q < parcels; q++)
-                z[q] = cplex.boolVarArray(smartPoints);
+                delivery[q] = cplex.boolVarArray(smartPoints);
 
             IloLinearNumExpr deliveryObjective = cplex.linearNumExpr();
 
             // sums up all the delivered parcels //
             for (int q = 0; q < parcels; q++)
-                deliveryObjective.addTerm(1.00,z[q][parcelLocation[q]]);
+                deliveryObjective.addTerm(1.00,delivery[q][parcelLocation[q]]);
 
             // main objective = max { deliveryObjective } //
             cplex.addMaximize(deliveryObjective);
@@ -235,13 +235,13 @@ public class VRPv3 {
 
                     for (int q = 0; q < parcelsPerSize.get(j).size(); q++) {
                         if (parcelLocation[parcelsPerSize.get(j).get(q)] == i)
-                            delivered.addTerm(1.0, z[parcelsPerSize.get(j).get(q)][i]);
+                            delivered.addTerm(1.0, delivery[parcelsPerSize.get(j).get(q)][i]);
                     }
 
                     for (int k = j + 1; k < sizes; k++) {
                         for (int q = 0; q < parcelsPerSize.get(k).size(); q++) {
                             if (parcelLocation[parcelsPerSize.get(k).get(q)] == i)
-                                deliveredBigger.addTerm(1.0, z[parcelsPerSize.get(k).get(q)][i]);
+                                deliveredBigger.addTerm(1.0, delivery[parcelsPerSize.get(k).get(q)][i]);
                         }
                     }
 
@@ -257,7 +257,7 @@ public class VRPv3 {
             System.out.println("\nConstraint 2: Choosing if we deliver each parcel.\n");
 
             for (int q = 0; q < parcels; q++)
-                cplex.addLe(z[q][parcelLocation[q]], 1.0);
+                cplex.addLe(delivery[q][parcelLocation[q]], 1.0);
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -268,7 +268,7 @@ public class VRPv3 {
                 for (int q = 0; q < parcels; q++){
                     for (int i = 0; i < smartPoints; i++)
                         if ( parcelLocation[q] == i)
-                            matrix[q][i] = Math.abs(cplex.getValue(z[q][i]));
+                            matrix[q][i] = Math.abs(cplex.getValue(delivery[q][i]));
                         else
                             matrix[q][i] = 0.0;
                 }
@@ -287,9 +287,9 @@ public class VRPv3 {
 
     /**
      * Methods that solves the VRP problem.
-     * @param z, matrix containing the delivery location of all parcels.
+     * @param delivery, matrix containing the delivery location of all parcels.
      */
-    private void solveVRP(double[][] z) {
+    private void solveVRP(double[][] delivery) {
 
         final long startTime = System.currentTimeMillis();
 
@@ -342,20 +342,20 @@ public class VRPv3 {
 
             //////////////////////////////////// Setting Up Main Objective /////////////////////////////////////////
 
-            IloNumVar[][] x = new IloNumVar[smartPoints][smartPoints];
+            IloNumVar[][] route = new IloNumVar[smartPoints][smartPoints];
 
             for (int i = 0; i < smartPoints; i++)
-                x[i] = cplex.boolVarArray(smartPoints);
+                route[i] = cplex.boolVarArray(smartPoints);
 
 
-            IloNumVar[][][] y = new IloNumVar[parcels][smartPoints][smartPoints];
+            IloNumVar[][][] parcelRoute = new IloNumVar[parcels][smartPoints][smartPoints];
 
             for (int q = 0; q < parcels; q++) {
                 for (int i = 0; i < smartPoints; i++)
-                    y[q][i] = cplex.boolVarArray(smartPoints);
+                    parcelRoute[q][i] = cplex.boolVarArray(smartPoints);
             }
 
-            IloNumVar[] t = cplex.numVarArray(smartPoints, 0, timeShift);
+            IloNumVar[] time = cplex.numVarArray(smartPoints, 0, timeShift);
 
             // transportation cost of the main objective //
             IloLinearNumExpr transportationObjective = cplex.linearNumExpr();
@@ -363,7 +363,7 @@ public class VRPv3 {
             for (int i = 0; i < smartPoints; i++) {
                 for (int j = 0; j < smartPoints; j++) {
                     if (i != j)
-                        transportationObjective.addTerm(travelMatrix[i][j], x[i][j]);
+                        transportationObjective.addTerm(travelMatrix[i][j], route[i][j]);
                 }
             }
 
@@ -371,7 +371,7 @@ public class VRPv3 {
             IloLinearNumExpr vehicleObjective = cplex.linearNumExpr();
 
             for (int i = 1; i < smartPoints; i++)
-                vehicleObjective.addTerm(vehicleCost, x[0][i]);
+                vehicleObjective.addTerm(vehicleCost, route[0][i]);
 
 
             // main objective = min { transportationObjective + vehicleObjective } //
@@ -392,15 +392,15 @@ public class VRPv3 {
                     IloLinearNumExpr loadedLargerParcels = cplex.linearNumExpr();
 
                     for (int q = 0; q < parcelsPerSize.get(j).size(); q++)
-                        loadedParcels.addTerm(1.0, y[parcelsPerSize.get(j).get(q)][0][i]);
+                        loadedParcels.addTerm(1.0, parcelRoute[parcelsPerSize.get(j).get(q)][0][i]);
 
                     for (int k = j + 1; k < sizes; k++) {
                         for (int q = 0; q < parcelsPerSize.get(k).size(); q++)
-                            loadedLargerParcels.addTerm(1.0, y[parcelsPerSize.get(k).get(q)][0][i]);
+                            loadedLargerParcels.addTerm(1.0, parcelRoute[parcelsPerSize.get(k).get(q)][0][i]);
                     }
 
                     cplex.addLe(loadedParcels, cplex.sum(
-                            cplex.prod(x[0][i], maxVehicleCapacity[j]),
+                            cplex.prod(route[0][i], maxVehicleCapacity[j]),
                             cplex.prod(-1.00, loadedLargerParcels)));
                 }
             }
@@ -414,7 +414,7 @@ public class VRPv3 {
 
                 for (int j = 0; j < smartPoints; j++) {
                     if (i != j)
-                        routes.addTerm(1.0, x[i][j]);
+                        routes.addTerm(1.0, route[i][j]);
                 }
 
                 cplex.addLe(routes, 1.0);
@@ -429,12 +429,12 @@ public class VRPv3 {
 
                 for (int j = 0; j < smartPoints; j++) {
                     if (i != j)
-                        outgoing.addTerm(1.0, x[i][j]);
+                        outgoing.addTerm(1.0, route[i][j]);
                 }
 
                 for (int j = 0; j < smartPoints; j++) {
                     if (i != j)
-                        incoming.addTerm(1.0, x[j][i]);
+                        incoming.addTerm(1.0, route[j][i]);
                 }
 
                 cplex.addEq(outgoing, incoming);
@@ -451,12 +451,12 @@ public class VRPv3 {
 
                         for (int i = 0; i < smartPoints; i++) {
                             if (i != j)
-                                enter.addTerm(1.0, y[q][i][j]);
+                                enter.addTerm(1.0, parcelRoute[q][i][j]);
                         }
 
                         for (int i = 0; i < smartPoints; i++) {
                             if (i != j)
-                                leave.addTerm(1.0, y[q][j][i]);
+                                leave.addTerm(1.0, parcelRoute[q][j][i]);
                         }
 
                         cplex.addEq(enter, leave);
@@ -475,15 +475,15 @@ public class VRPv3 {
 
                         for (int i = 0; i < smartPoints; i++) {
                             if (i != j)
-                                enter.addTerm(1.0, y[q][i][j]);
+                                enter.addTerm(1.0, parcelRoute[q][i][j]);
                         }
 
                         for (int i = 0; i < smartPoints; i++) {
                             if (i != j)
-                                leave.addTerm(1.0, y[q][j][i]);
+                                leave.addTerm(1.0, parcelRoute[q][j][i]);
                         }
 
-                        cplex.addEq(enter, z[q][parcelLocation[q]]);
+                        cplex.addEq(enter, delivery[q][parcelLocation[q]]);
                         cplex.addEq(leave, 0.0);
                     }
                 }
@@ -497,9 +497,9 @@ public class VRPv3 {
                 IloLinearNumExpr loaded = cplex.linearNumExpr();
 
                 for (int i = 1; i < smartPoints; i++)
-                    loaded.addTerm(1.0, y[q][0][i]);
+                    loaded.addTerm(1.0, parcelRoute[q][0][i]);
 
-                cplex.addEq(loaded, z[q][parcelLocation[q]]);
+                cplex.addEq(loaded, delivery[q][parcelLocation[q]]);
             }
 
             System.out.println("\nConstraint 7: Each parcel must be loaded to a vehicle in order to move form SPi to SPj.");
@@ -508,14 +508,14 @@ public class VRPv3 {
                 for (int i = 0; i < smartPoints; i++) {
                     for (int j = 0; j < smartPoints; j++) {
                         if (i != j)
-                            cplex.addLe(y[q][i][j], x[i][j]);
+                            cplex.addLe(parcelRoute[q][i][j], route[i][j]);
                     }
                 }
             }
 
             System.out.println("\nConstraint 8: Starting Time from depot equals to 0.");
 
-            cplex.addEq(0, t[0]);
+            cplex.addEq(0, time[0]);
 
             System.out.println("\nConstraint 9: After arriving at each SP and unloading the parcels we must be able to return to depot " +
                     "before the end of the shift (T).");
@@ -526,10 +526,10 @@ public class VRPv3 {
 
                 for (int q = 0; q < parcels; q++) {
                     if (parcelLocation[q] == i)
-                        loadedParcels += z[q][i];
+                        loadedParcels += delivery[q][i];
                 }
 
-                cplex.addLe(cplex.sum(cplex.sum(t[i], loadingCost * loadedParcels), travelMatrix[i][0]), timeShift);
+                cplex.addLe(cplex.sum(cplex.sum(time[i], loadingCost * loadedParcels), travelMatrix[i][0]), timeShift);
             }
 
             System.out.println("\nConstraint 10: After travelling to SPi from SPj, the arriving time of t[i] must be t[j] + " +
@@ -542,11 +542,11 @@ public class VRPv3 {
                         double loadedParcels = 0;
 
                         for (int q = 0; q < parcels; q++)
-                            loadedParcels += z[q][j];
+                            loadedParcels += delivery[q][j];
 
-                        cplex.addGe(t[i], cplex.sum(
-                                cplex.sum(cplex.sum(loadingCost * loadedParcels, t[j]), travelMatrix[j][i]),
-                                cplex.prod(cplex.prod(-1.0, cplex.diff(1.0, x[j][i])), timeShift)));
+                        cplex.addGe(time[i], cplex.sum(
+                                cplex.sum(cplex.sum(loadingCost * loadedParcels, time[j]), travelMatrix[j][i]),
+                                cplex.prod(cplex.prod(-1.0, cplex.diff(1.0, route[j][i])), timeShift)));
                     }
                 }
             }
@@ -554,13 +554,13 @@ public class VRPv3 {
             System.out.println("\nConstraint 11: No reason moving from SPi to SPi.");
 
             for (int i = 0; i < smartPoints; i++)
-                cplex.addEq(0.0, x[i][i]);
+                cplex.addEq(0.0, route[i][i]);
 
             System.out.println("\nConstraint 12: No reason moving a parcel from SPi to SPi.\n");
 
             for (int q = 0; q < parcels; q++) {
                 for (int i = 0; i < smartPoints; i++)
-                    cplex.addEq(y[q][i][i], 0.0);
+                    cplex.addEq(parcelRoute[q][i][i], 0.0);
             }
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -583,7 +583,7 @@ public class VRPv3 {
                     int deliveredParcels = 0;
 
                     for (int q = 0; q < parcels; q++) {
-                        if (z[q][parcelLocation[q]] == 1.00) {
+                        if (delivery[q][parcelLocation[q]] == 1.00) {
                             writer.write("ID: " + parcelID[q] + " -> " + parcelLocation[q] + "\n");
                             parcelsPerLocation.computeIfAbsent(parcelLocation[q], k -> new ArrayList<>()).add(parcelID[q]);
                             deliveredParcels++;
@@ -595,13 +595,13 @@ public class VRPv3 {
                     writer.write("\nArriving time on each SP:\n");
                     for (int i = 0; i < smartPoints; i++) {
                         if (parcelsPerLocation.get(i) != null)
-                            writer.write("Smart Point " + i + ": " + Math.abs(Math.ceil(cplex.getValue(t[i]))) + "\n");
+                            writer.write("Smart Point " + i + ": " + Math.abs(Math.ceil(cplex.getValue(time[i]))) + "\n");
                     }
 
                     int vehicleCounter = 0;
 
                     for (int i = 0; i < smartPoints; i++)
-                        vehicleCounter += Math.abs(cplex.getValue(x[i][0])) == 1.0 ? 1 : 0;
+                        vehicleCounter += Math.abs(cplex.getValue(route[i][0])) == 1.0 ? 1 : 0;
 
                     writer.write("\nTotal number of vehicles used: " + vehicleCounter + "\n");
 
@@ -614,7 +614,7 @@ public class VRPv3 {
 
                 for (int i = 0; i < smartPoints; i++) {
                     for (int j = 0; j < smartPoints; j++)
-                        vehicleRoutes[i][j] = Math.abs(cplex.getValue(x[i][j]));
+                        vehicleRoutes[i][j] = Math.abs(cplex.getValue(route[i][j]));
                 }
 
                 writeRoutes(vehicleRoutes);

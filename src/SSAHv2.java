@@ -215,10 +215,10 @@ public class SSAHv2 {
 
             //////////////////////////////////// Setting Up Main Objective /////////////////////////////////////
 
-            IloNumVar[][] z = new IloNumVar[parcels][smartPoints];
+            IloNumVar[][] delivery = new IloNumVar[parcels][smartPoints];
 
             for (int q = 0; q < parcels; q++)
-                z[q] = cplex.boolVarArray(smartPoints);
+                delivery[q] = cplex.boolVarArray(smartPoints);
 
             // sums up all the delivered parcels //
             IloNumExpr deliveryObjective = cplex.linearNumExpr();
@@ -229,7 +229,7 @@ public class SSAHv2 {
                 //check its one of the three possible locations//
                 for (int l = 0; l < deliveryLocations; l++) {
                     if (parcelLocation[q][l] != 0)
-                        possibleLocations.addTerm(1.0, z[q][parcelLocation[q][l]]);
+                        possibleLocations.addTerm(1.0, delivery[q][parcelLocation[q][l]]);
                 }
 
                 deliveryObjective = cplex.sum(deliveryObjective,possibleLocations);
@@ -255,13 +255,13 @@ public class SSAHv2 {
 
                     for (int q = 0; q < parcelsPerSize.get(j).size(); q++) {
                         if (locationsPerParcel.get(parcelsPerSize.get(j).get(q)).contains(i))
-                            delivered.addTerm(1.0, z[parcelsPerSize.get(j).get(q)][i]);
+                            delivered.addTerm(1.0, delivery[parcelsPerSize.get(j).get(q)][i]);
                     }
 
                     for (int k = j + 1; k < sizes; k++) {
                         for (int q = 0; q < parcelsPerSize.get(k).size(); q++) {
                             if (locationsPerParcel.get(parcelsPerSize.get(k).get(q)).contains(i))
-                                deliveredBigger.addTerm(1.0, z[parcelsPerSize.get(k).get(q)][i]);
+                                deliveredBigger.addTerm(1.0, delivery[parcelsPerSize.get(k).get(q)][i]);
                         }
                     }
 
@@ -276,7 +276,7 @@ public class SSAHv2 {
                 IloLinearNumExpr delivered = cplex.linearNumExpr();
 
                 for (int l = 0; l < locationsPerParcel.get(q).size(); l++)
-                    delivered.addTerm(1.0, z[q][locationsPerParcel.get(q).get(l)]);
+                    delivered.addTerm(1.0, delivery[q][locationsPerParcel.get(q).get(l)]);
 
                 cplex.addLe(delivered, 1.0);
             }
@@ -299,7 +299,7 @@ public class SSAHv2 {
 
                     for (int q = 0; q < parcels; q++) {
                         for (int j = 1; j < smartPoints; j++) {
-                            if (locationsPerParcel.get(q).contains(j) && cplex.getValue(z[q][j]) == 1.00)
+                            if (locationsPerParcel.get(q).contains(j) && cplex.getValue(delivery[q][j]) == 1.00)
                                 writer.write("ID: " + parcelID[q]  + " -> " + j + "\n");
                         }
                     }
@@ -323,7 +323,7 @@ public class SSAHv2 {
 
                 for (int q = 0; q < parcels; q++) {
                     for (int j = 1; j < smartPoints; j++) {
-                        if (locationsPerParcel.get(q).contains(j) && cplex.getValue(z[q][j]) == 1.00) {
+                        if (locationsPerParcel.get(q).contains(j) && cplex.getValue(delivery[q][j]) == 1.00) {
                             parcelsPerLocation.get(j).add(parcelID[q]);
                             sizesPerLocation.get(j)[parcelSize[q]]++;
                         }
@@ -331,7 +331,7 @@ public class SSAHv2 {
                 }
 
                 // apply stochastic savings heuristic //
-                savingsApproach(parcelsPerLocation,sizesPerLocation);
+                stochasticSavingsApproach(parcelsPerLocation,sizesPerLocation);
 
                 ////////////////////////////////////////////////////////////////////////////////////////////////////
             } else {
@@ -345,11 +345,11 @@ public class SSAHv2 {
     }
 
     /**
-     * Method implementing the savings heuristic.
+     * Method implementing the stochastic savings heuristic.
      * @param parcelsPerLocation ,map containing the parcels to be delivered to each smartPoint.
      * @param sizesPerLocation ,map containing the number of parcels of each size for each smartPoint.
      */
-    private void savingsApproach(HashMap<Integer, ArrayList<Long>> parcelsPerLocation, HashMap<Integer,int[]> sizesPerLocation) {
+    private void stochasticSavingsApproach(HashMap<Integer, ArrayList<Long>> parcelsPerLocation, HashMap<Integer,int[]> sizesPerLocation) {
 
         // used in order to store all the best routes //
         HashMap<Integer, List<Integer>> bestRoutes = new HashMap<>();

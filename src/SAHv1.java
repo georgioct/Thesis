@@ -197,16 +197,16 @@ public class SAHv1 {
 
             //////////////////////////////////// Setting Up Main Objective /////////////////////////////////////
 
-            IloNumVar[][] z = new IloNumVar[parcels][smartPoints];
+            IloNumVar[][] delivery = new IloNumVar[parcels][smartPoints];
 
             for (int q = 0; q < parcels; q++)
-                z[q] = cplex.boolVarArray(smartPoints);
+                delivery[q] = cplex.boolVarArray(smartPoints);
 
             IloLinearNumExpr deliveryObjective = cplex.linearNumExpr();
 
             // sums up all the delivered parcels //
             for (int q = 0; q < parcels; q++)
-                deliveryObjective.addTerm(1.00,z[q][parcelLocation[q]]);
+                deliveryObjective.addTerm(1.00,delivery[q][parcelLocation[q]]);
 
             // main objective = max { deliveryObjective } //
             cplex.addMaximize(deliveryObjective);
@@ -227,13 +227,13 @@ public class SAHv1 {
 
                     for (int q = 0; q < parcelsPerSize.get(j).size(); q++) {
                         if (parcelLocation[parcelsPerSize.get(j).get(q)] == i)
-                            delivered.addTerm(1.0, z[parcelsPerSize.get(j).get(q)][i]);
+                            delivered.addTerm(1.0, delivery[parcelsPerSize.get(j).get(q)][i]);
                     }
 
                     for (int k = j + 1; k < sizes; k++) {
                         for (int q = 0; q < parcelsPerSize.get(k).size(); q++) {
                             if (parcelLocation[parcelsPerSize.get(k).get(q)] == i)
-                                deliveredBigger.addTerm(1.0, z[parcelsPerSize.get(k).get(q)][i]);
+                                deliveredBigger.addTerm(1.0, delivery[parcelsPerSize.get(k).get(q)][i]);
                         }
                     }
 
@@ -244,7 +244,7 @@ public class SAHv1 {
             System.out.println("\nConstraint 2: Choosing if we deliver each parcel.\n");
 
             for (int q = 0; q < parcels; q++)
-                cplex.addLe(z[q][parcelLocation[q]], 1.0);
+                cplex.addLe(delivery[q][parcelLocation[q]], 1.0);
 
             //////////////////////////////////// Solving the problem ///////////////////////////////////////////
 
@@ -261,7 +261,7 @@ public class SAHv1 {
                     writer.write("\n---Parcel Delivery Location---\n");
 
                     for (int q = 0; q < parcels; q++) {
-                        if (cplex.getValue(z[q][parcelLocation[q]]) == 1.00)
+                        if (cplex.getValue(delivery[q][parcelLocation[q]]) == 1.00)
                             writer.write("ID: " + parcelID[q] + " -> " + parcelLocation[q] + "\n");
                     }
                     writer.write("------------------------------\n");
@@ -283,7 +283,7 @@ public class SAHv1 {
                 }
 
                 for (int q = 0; q < parcels; q++){
-                    if (cplex.getValue(z[q][parcelLocation[q]]) == 1.0) {
+                    if (cplex.getValue(delivery[q][parcelLocation[q]]) == 1.0) {
                         parcelsPerLocation.get(parcelLocation[q]).add(parcelID[q]);
                         sizesPerLocation.get(parcelLocation[q])[parcelSize[q]]++;
                     }
