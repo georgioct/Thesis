@@ -1,4 +1,4 @@
-Total execution time: 0.003033333333333333 minutes.
+Total execution time: 0.0027 minutes.
 
 Optimal solution found: 153.5
 Transportation Cost: 153.5

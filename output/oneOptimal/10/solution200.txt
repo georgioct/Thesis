@@ -1,211 +1,211 @@
-Total execution time: 59.99111666666667 minutes.
+Total execution time: 60.0034 minutes.
 
 Optimal solution found: 419.3
-Transportation Cost: 339.29999999999995
-Penalty Cost: 80.00000000000006
+Transportation Cost: 339.3
+Penalty Cost: 80.0
 
-Parcel ID: 1001 -> 1
-Parcel ID: 1002 -> 1
-Parcel ID: 1003 -> 1
-Parcel ID: 1004 -> 1
-Parcel ID: 1005 -> 1
-Parcel ID: 1006 -> 1
-Parcel ID: 1007 -> 1
-Parcel ID: 1008 -> 1
-Parcel ID: 1009 -> 1
-Parcel ID: 1010 -> 1
-Parcel ID: 1011 -> 1
-Parcel ID: 1012 -> 1
-Parcel ID: 1013 -> 1
-Parcel ID: 1014 -> 1
-Parcel ID: 1015 -> 1
-Parcel ID: 1016 -> 1
-Parcel ID: 1017 -> 1
-Parcel ID: 1018 -> 1
-Parcel ID: 1019 -> 1
-Parcel ID: 1020 -> 1
-Parcel ID: 1021 -> 2
-Parcel ID: 1022 -> 2
-Parcel ID: 1023 -> 2
-Parcel ID: 1024 -> 2
-Parcel ID: 1025 -> 2
-Parcel ID: 1026 -> 2
-Parcel ID: 1027 -> 2
-Parcel ID: 1028 -> 2
-Parcel ID: 1029 -> 2
-Parcel ID: 1030 -> 2
-Parcel ID: 1031 -> 2
-Parcel ID: 1032 -> 2
-Parcel ID: 1033 -> 2
-Parcel ID: 1034 -> 2
-Parcel ID: 1035 -> 2
-Parcel ID: 1036 -> 2
-Parcel ID: 1037 -> 2
-Parcel ID: 1038 -> 2
-Parcel ID: 1039 -> 2
-Parcel ID: 1040 -> 2
-Parcel ID: 1043 -> 3
-Parcel ID: 1046 -> 3
-Parcel ID: 1047 -> 3
-Parcel ID: 1049 -> 3
-Parcel ID: 1051 -> 3
-Parcel ID: 1052 -> 3
-Parcel ID: 1053 -> 3
-Parcel ID: 1055 -> 3
-Parcel ID: 1056 -> 3
-Parcel ID: 1057 -> 3
-Parcel ID: 1058 -> 3
-Parcel ID: 1059 -> 3
-Parcel ID: 1061 -> 4
-Parcel ID: 1062 -> 4
-Parcel ID: 1063 -> 4
-Parcel ID: 1064 -> 4
-Parcel ID: 1065 -> 4
-Parcel ID: 1066 -> 4
-Parcel ID: 1067 -> 4
-Parcel ID: 1068 -> 4
-Parcel ID: 1069 -> 4
-Parcel ID: 1070 -> 4
-Parcel ID: 1071 -> 4
-Parcel ID: 1072 -> 4
-Parcel ID: 1073 -> 4
-Parcel ID: 1074 -> 4
-Parcel ID: 1075 -> 4
-Parcel ID: 1076 -> 4
-Parcel ID: 1077 -> 4
-Parcel ID: 1078 -> 4
-Parcel ID: 1079 -> 4
-Parcel ID: 1080 -> 4
-Parcel ID: 1081 -> 5
-Parcel ID: 1082 -> 5
-Parcel ID: 1083 -> 5
-Parcel ID: 1084 -> 5
-Parcel ID: 1085 -> 5
-Parcel ID: 1087 -> 5
-Parcel ID: 1088 -> 5
-Parcel ID: 1089 -> 5
-Parcel ID: 1090 -> 5
-Parcel ID: 1091 -> 5
-Parcel ID: 1093 -> 5
-Parcel ID: 1095 -> 5
-Parcel ID: 1096 -> 5
-Parcel ID: 1097 -> 5
-Parcel ID: 1098 -> 5
-Parcel ID: 1099 -> 5
-Parcel ID: 1100 -> 5
-Parcel ID: 1101 -> 6
-Parcel ID: 1102 -> 6
-Parcel ID: 1103 -> 6
-Parcel ID: 1104 -> 6
-Parcel ID: 1105 -> 6
-Parcel ID: 1106 -> 6
-Parcel ID: 1107 -> 6
-Parcel ID: 1108 -> 6
-Parcel ID: 1109 -> 6
-Parcel ID: 1110 -> 6
-Parcel ID: 1111 -> 6
-Parcel ID: 1112 -> 6
-Parcel ID: 1113 -> 6
-Parcel ID: 1114 -> 6
-Parcel ID: 1115 -> 6
-Parcel ID: 1116 -> 6
-Parcel ID: 1117 -> 6
-Parcel ID: 1118 -> 6
-Parcel ID: 1119 -> 6
-Parcel ID: 1120 -> 6
-Parcel ID: 1121 -> 7
-Parcel ID: 1122 -> 7
-Parcel ID: 1123 -> 7
-Parcel ID: 1124 -> 7
-Parcel ID: 1125 -> 7
-Parcel ID: 1126 -> 7
-Parcel ID: 1127 -> 7
-Parcel ID: 1128 -> 7
-Parcel ID: 1130 -> 7
-Parcel ID: 1131 -> 7
-Parcel ID: 1132 -> 7
-Parcel ID: 1134 -> 7
-Parcel ID: 1135 -> 7
-Parcel ID: 1137 -> 7
-Parcel ID: 1138 -> 7
-Parcel ID: 1139 -> 7
-Parcel ID: 1140 -> 7
-Parcel ID: 1141 -> 8
-Parcel ID: 1142 -> 8
-Parcel ID: 1143 -> 8
-Parcel ID: 1144 -> 8
-Parcel ID: 1145 -> 8
-Parcel ID: 1146 -> 8
-Parcel ID: 1147 -> 8
-Parcel ID: 1148 -> 8
-Parcel ID: 1149 -> 8
-Parcel ID: 1150 -> 8
-Parcel ID: 1151 -> 8
-Parcel ID: 1152 -> 8
-Parcel ID: 1153 -> 8
-Parcel ID: 1154 -> 8
-Parcel ID: 1155 -> 8
-Parcel ID: 1156 -> 8
-Parcel ID: 1157 -> 8
-Parcel ID: 1158 -> 8
-Parcel ID: 1159 -> 8
-Parcel ID: 1160 -> 8
-Parcel ID: 1161 -> 9
-Parcel ID: 1162 -> 9
-Parcel ID: 1163 -> 9
-Parcel ID: 1164 -> 9
-Parcel ID: 1165 -> 9
-Parcel ID: 1166 -> 9
-Parcel ID: 1167 -> 9
-Parcel ID: 1168 -> 9
-Parcel ID: 1169 -> 9
-Parcel ID: 1170 -> 9
-Parcel ID: 1171 -> 9
-Parcel ID: 1172 -> 9
-Parcel ID: 1173 -> 9
-Parcel ID: 1174 -> 9
-Parcel ID: 1175 -> 9
-Parcel ID: 1176 -> 9
-Parcel ID: 1177 -> 9
-Parcel ID: 1178 -> 9
-Parcel ID: 1179 -> 9
-Parcel ID: 1180 -> 9
-Parcel ID: 1181 -> 10
-Parcel ID: 1182 -> 10
-Parcel ID: 1183 -> 10
-Parcel ID: 1186 -> 10
-Parcel ID: 1187 -> 10
-Parcel ID: 1188 -> 10
-Parcel ID: 1189 -> 10
-Parcel ID: 1190 -> 10
-Parcel ID: 1191 -> 10
-Parcel ID: 1192 -> 10
-Parcel ID: 1193 -> 10
-Parcel ID: 1194 -> 10
-Parcel ID: 1195 -> 10
-Parcel ID: 1196 -> 10
-Parcel ID: 1197 -> 10
-Parcel ID: 1198 -> 10
-Parcel ID: 1199 -> 10
-Parcel ID: 1200 -> 10
+Parcel Delivery Location:
+ID: 1001 -> 1
+ID: 1002 -> 1
+ID: 1003 -> 1
+ID: 1004 -> 1
+ID: 1005 -> 1
+ID: 1006 -> 1
+ID: 1007 -> 1
+ID: 1008 -> 1
+ID: 1009 -> 1
+ID: 1010 -> 1
+ID: 1011 -> 1
+ID: 1012 -> 1
+ID: 1013 -> 1
+ID: 1014 -> 1
+ID: 1015 -> 1
+ID: 1016 -> 1
+ID: 1017 -> 1
+ID: 1018 -> 1
+ID: 1019 -> 1
+ID: 1020 -> 1
+ID: 1021 -> 2
+ID: 1022 -> 2
+ID: 1023 -> 2
+ID: 1024 -> 2
+ID: 1025 -> 2
+ID: 1026 -> 2
+ID: 1027 -> 2
+ID: 1028 -> 2
+ID: 1029 -> 2
+ID: 1030 -> 2
+ID: 1031 -> 2
+ID: 1032 -> 2
+ID: 1033 -> 2
+ID: 1034 -> 2
+ID: 1035 -> 2
+ID: 1036 -> 2
+ID: 1037 -> 2
+ID: 1038 -> 2
+ID: 1039 -> 2
+ID: 1040 -> 2
+ID: 1043 -> 3
+ID: 1046 -> 3
+ID: 1047 -> 3
+ID: 1049 -> 3
+ID: 1051 -> 3
+ID: 1052 -> 3
+ID: 1053 -> 3
+ID: 1055 -> 3
+ID: 1056 -> 3
+ID: 1057 -> 3
+ID: 1058 -> 3
+ID: 1059 -> 3
+ID: 1061 -> 4
+ID: 1062 -> 4
+ID: 1063 -> 4
+ID: 1064 -> 4
+ID: 1065 -> 4
+ID: 1066 -> 4
+ID: 1067 -> 4
+ID: 1068 -> 4
+ID: 1069 -> 4
+ID: 1070 -> 4
+ID: 1071 -> 4
+ID: 1072 -> 4
+ID: 1073 -> 4
+ID: 1074 -> 4
+ID: 1075 -> 4
+ID: 1076 -> 4
+ID: 1077 -> 4
+ID: 1078 -> 4
+ID: 1079 -> 4
+ID: 1080 -> 4
+ID: 1081 -> 5
+ID: 1082 -> 5
+ID: 1083 -> 5
+ID: 1084 -> 5
+ID: 1085 -> 5
+ID: 1087 -> 5
+ID: 1088 -> 5
+ID: 1089 -> 5
+ID: 1090 -> 5
+ID: 1091 -> 5
+ID: 1093 -> 5
+ID: 1095 -> 5
+ID: 1096 -> 5
+ID: 1097 -> 5
+ID: 1098 -> 5
+ID: 1099 -> 5
+ID: 1100 -> 5
+ID: 1101 -> 6
+ID: 1102 -> 6
+ID: 1103 -> 6
+ID: 1104 -> 6
+ID: 1105 -> 6
+ID: 1106 -> 6
+ID: 1107 -> 6
+ID: 1108 -> 6
+ID: 1109 -> 6
+ID: 1110 -> 6
+ID: 1111 -> 6
+ID: 1112 -> 6
+ID: 1113 -> 6
+ID: 1114 -> 6
+ID: 1115 -> 6
+ID: 1116 -> 6
+ID: 1117 -> 6
+ID: 1118 -> 6
+ID: 1119 -> 6
+ID: 1120 -> 6
+ID: 1121 -> 7
+ID: 1122 -> 7
+ID: 1123 -> 7
+ID: 1124 -> 7
+ID: 1125 -> 7
+ID: 1126 -> 7
+ID: 1127 -> 7
+ID: 1128 -> 7
+ID: 1130 -> 7
+ID: 1131 -> 7
+ID: 1132 -> 7
+ID: 1134 -> 7
+ID: 1135 -> 7
+ID: 1137 -> 7
+ID: 1138 -> 7
+ID: 1139 -> 7
+ID: 1140 -> 7
+ID: 1141 -> 8
+ID: 1142 -> 8
+ID: 1143 -> 8
+ID: 1144 -> 8
+ID: 1145 -> 8
+ID: 1146 -> 8
+ID: 1147 -> 8
+ID: 1148 -> 8
+ID: 1149 -> 8
+ID: 1150 -> 8
+ID: 1151 -> 8
+ID: 1152 -> 8
+ID: 1153 -> 8
+ID: 1154 -> 8
+ID: 1155 -> 8
+ID: 1156 -> 8
+ID: 1157 -> 8
+ID: 1158 -> 8
+ID: 1159 -> 8
+ID: 1160 -> 8
+ID: 1161 -> 9
+ID: 1162 -> 9
+ID: 1163 -> 9
+ID: 1164 -> 9
+ID: 1165 -> 9
+ID: 1166 -> 9
+ID: 1167 -> 9
+ID: 1168 -> 9
+ID: 1169 -> 9
+ID: 1170 -> 9
+ID: 1171 -> 9
+ID: 1172 -> 9
+ID: 1173 -> 9
+ID: 1174 -> 9
+ID: 1175 -> 9
+ID: 1176 -> 9
+ID: 1177 -> 9
+ID: 1178 -> 9
+ID: 1179 -> 9
+ID: 1180 -> 9
+ID: 1181 -> 10
+ID: 1182 -> 10
+ID: 1183 -> 10
+ID: 1186 -> 10
+ID: 1187 -> 10
+ID: 1188 -> 10
+ID: 1189 -> 10
+ID: 1190 -> 10
+ID: 1191 -> 10
+ID: 1192 -> 10
+ID: 1193 -> 10
+ID: 1194 -> 10
+ID: 1195 -> 10
+ID: 1196 -> 10
+ID: 1197 -> 10
+ID: 1198 -> 10
+ID: 1199 -> 10
+ID: 1200 -> 10
 
 Total number of parcels delivered: 184 / 200
 
 Arriving time on each SP:
-Smart Point 0: 0.0
-Smart Point 1: 50.0
-Smart Point 2: 21.0
-Smart Point 3: 19.0
+Smart Point 1: 406.0
+Smart Point 2: 440.0
+Smart Point 3: 362.0
 Smart Point 4: 21.0
 Smart Point 5: 416.0
-Smart Point 6: 56.0
+Smart Point 6: 405.0
 Smart Point 7: 447.0
 Smart Point 8: 438.0
-Smart Point 9: 83.0
+Smart Point 9: 378.0
 Smart Point 10: 385.0
 
 Total number of vehicles used: 3
 
-Route 1: 0->2->6->9->0
-Route 2: 0->3->10->5->7->0
-Route 3: 0->4->1->8->0
+Route 1: 0->3->10->5->7->0
+Route 2: 0->4->1->8->0
+Route 3: 0->9->6->2->0
