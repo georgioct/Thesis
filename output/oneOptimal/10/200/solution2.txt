@@ -1,8 +1,8 @@
-Total execution time: 60.0088 minutes.
+Total execution time: 60.0034 minutes.
 
-Optimal solution found: 439.5
-Transportation Cost: 339.5
-Penalty Cost: 100.0
+Optimal solution found: 487.2
+Transportation Cost: 347.2
+Penalty Cost: 140.0
 
 Parcel Delivery Location:
 ID: 1001 -> 1
@@ -16,28 +16,22 @@ ID: 1008 -> 1
 ID: 1009 -> 1
 ID: 1010 -> 1
 ID: 1011 -> 1
-ID: 1012 -> 1
 ID: 1013 -> 1
 ID: 1014 -> 1
 ID: 1015 -> 1
 ID: 1016 -> 1
-ID: 1017 -> 1
 ID: 1018 -> 1
 ID: 1019 -> 1
 ID: 1020 -> 1
 ID: 1021 -> 2
-ID: 1022 -> 2
 ID: 1023 -> 2
-ID: 1024 -> 2
 ID: 1025 -> 2
-ID: 1026 -> 2
 ID: 1027 -> 2
 ID: 1028 -> 2
 ID: 1029 -> 2
 ID: 1030 -> 2
 ID: 1031 -> 2
 ID: 1032 -> 2
-ID: 1033 -> 2
 ID: 1034 -> 2
 ID: 1035 -> 2
 ID: 1036 -> 2
@@ -88,13 +82,16 @@ ID: 1080 -> 4
 ID: 1081 -> 5
 ID: 1082 -> 5
 ID: 1083 -> 5
+ID: 1084 -> 5
 ID: 1085 -> 5
 ID: 1086 -> 5
 ID: 1087 -> 5
 ID: 1088 -> 5
 ID: 1089 -> 5
+ID: 1090 -> 5
 ID: 1091 -> 5
 ID: 1092 -> 5
+ID: 1093 -> 5
 ID: 1094 -> 5
 ID: 1095 -> 5
 ID: 1096 -> 5
@@ -107,15 +104,17 @@ ID: 1102 -> 6
 ID: 1103 -> 6
 ID: 1104 -> 6
 ID: 1105 -> 6
-ID: 1107 -> 6
+ID: 1106 -> 6
 ID: 1108 -> 6
+ID: 1109 -> 6
 ID: 1110 -> 6
+ID: 1111 -> 6
 ID: 1112 -> 6
 ID: 1113 -> 6
-ID: 1114 -> 6
 ID: 1115 -> 6
 ID: 1116 -> 6
 ID: 1117 -> 6
+ID: 1118 -> 6
 ID: 1119 -> 6
 ID: 1120 -> 6
 ID: 1121 -> 7
@@ -160,9 +159,7 @@ ID: 1163 -> 9
 ID: 1165 -> 9
 ID: 1167 -> 9
 ID: 1168 -> 9
-ID: 1169 -> 9
 ID: 1170 -> 9
-ID: 1172 -> 9
 ID: 1174 -> 9
 ID: 1175 -> 9
 ID: 1176 -> 9
@@ -177,10 +174,8 @@ ID: 1185 -> 10
 ID: 1186 -> 10
 ID: 1187 -> 10
 ID: 1188 -> 10
-ID: 1189 -> 10
 ID: 1190 -> 10
 ID: 1191 -> 10
-ID: 1192 -> 10
 ID: 1193 -> 10
 ID: 1194 -> 10
 ID: 1195 -> 10
@@ -190,22 +185,22 @@ ID: 1198 -> 10
 ID: 1199 -> 10
 ID: 1200 -> 10
 
-Total number of parcels delivered: 184 / 200
+Total number of parcels delivered: 179 / 200
 
 Arriving time on each SP:
-Smart Point 1: 411.0
+Smart Point 1: 405.0
 Smart Point 2: 21.0
-Smart Point 3: 61.0
+Smart Point 3: 442.0
 Smart Point 4: 440.0
 Smart Point 5: 48.0
-Smart Point 6: 434.0
+Smart Point 6: 17.0
 Smart Point 7: 17.0
-Smart Point 8: 378.0
-Smart Point 9: 457.0
-Smart Point 10: 443.0
+Smart Point 8: 410.0
+Smart Point 9: 459.0
+Smart Point 10: 433.0
 
 Total number of vehicles used: 3
 
-Route 1: 0->2->3->10->0
-Route 2: 0->7->5->6->9->0
-Route 3: 0->8->1->4->0
+Route 1: 0->2->1->10->9->0
+Route 2: 0->6->8->4->0
+Route 3: 0->7->5->3->0

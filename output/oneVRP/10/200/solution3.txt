@@ -1,4 +1,4 @@
-Total execution time: 2.7267 minutes.
+Total execution time: 60.0038 minutes.
 
 Transportation Cost: 407.7
 
@@ -21,8 +21,6 @@ ID: 1015 -> 1
 ID: 1016 -> 1
 ID: 1017 -> 1
 ID: 1018 -> 1
-ID: 1019 -> 1
-ID: 1020 -> 1
 ID: 1021 -> 2
 ID: 1022 -> 2
 ID: 1023 -> 2
@@ -31,14 +29,10 @@ ID: 1025 -> 2
 ID: 1026 -> 2
 ID: 1027 -> 2
 ID: 1028 -> 2
-ID: 1029 -> 2
 ID: 1030 -> 2
-ID: 1031 -> 2
 ID: 1032 -> 2
 ID: 1033 -> 2
 ID: 1034 -> 2
-ID: 1035 -> 2
-ID: 1036 -> 2
 ID: 1037 -> 2
 ID: 1038 -> 2
 ID: 1039 -> 2
@@ -116,12 +110,10 @@ ID: 1110 -> 6
 ID: 1111 -> 6
 ID: 1112 -> 6
 ID: 1113 -> 6
-ID: 1114 -> 6
 ID: 1115 -> 6
 ID: 1116 -> 6
 ID: 1117 -> 6
 ID: 1118 -> 6
-ID: 1119 -> 6
 ID: 1120 -> 6
 ID: 1121 -> 7
 ID: 1122 -> 7
@@ -176,10 +168,7 @@ ID: 1172 -> 9
 ID: 1173 -> 9
 ID: 1174 -> 9
 ID: 1175 -> 9
-ID: 1176 -> 9
-ID: 1177 -> 9
 ID: 1178 -> 9
-ID: 1180 -> 9
 ID: 1181 -> 10
 ID: 1182 -> 10
 ID: 1183 -> 10
@@ -196,28 +185,25 @@ ID: 1193 -> 10
 ID: 1194 -> 10
 ID: 1195 -> 10
 ID: 1196 -> 10
-ID: 1197 -> 10
-ID: 1198 -> 10
 ID: 1199 -> 10
-ID: 1200 -> 10
 
-Total number of parcels delivered: 197 / 200
+Total number of parcels delivered: 183 / 200
 
 Arriving time on each SP:
-Smart Point 1: 50.0
-Smart Point 2: 89.0
-Smart Point 3: 50.0
-Smart Point 4: 21.0
-Smart Point 5: 46.0
-Smart Point 6: 17.0
-Smart Point 7: 80.0
-Smart Point 8: 83.0
+Smart Point 1: 55.0
+Smart Point 2: 86.0
+Smart Point 3: 47.0
+Smart Point 4: 82.0
+Smart Point 5: 49.0
+Smart Point 6: 78.0
+Smart Point 7: 17.0
+Smart Point 8: 22.0
 Smart Point 9: 10.0
 Smart Point 10: 18.0
 
 Total number of vehicles used: 4
 
-Route 1: 0->4->1->8->0
-Route 2: 0->6->5->7->0
+Route 1: 0->7->5->6->0
+Route 2: 0->8->1->4->0
 Route 3: 0->9->0
 Route 4: 0->10->3->2->0

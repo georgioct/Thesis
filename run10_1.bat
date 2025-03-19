@@ -61,27 +61,27 @@ java -cp ".;%CPLEX_JAR%" VRPv4 ../input/10/200/smartPoints200.txt ../input/10/20
 
 javac -cp ".;%CPLEX_JAR%" SSAHv1.java
 
-java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/smartPoints200.txt ../input/10/200/p200_1.txt ../output/oneSSA/10/200/solution1.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/200/smartPoints200.txt ../input/10/200/p200_1.txt ../output/oneSSA/10/200/solution1.txt ../input/MIP.properties
 
-java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/smartPoints200.txt ../input/10/200/p200_2.txt ../output/oneSSA/10/200/solution2.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/200/smartPoints200.txt ../input/10/200/p200_2.txt ../output/oneSSA/10/200/solution2.txt ../input/MIP.properties
 
-java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/smartPoints200.txt ../input/10/200/p200_3.txt ../output/oneSSA/10/200/solution3.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/200/smartPoints200.txt ../input/10/200/p200_3.txt ../output/oneSSA/10/200/solution3.txt ../input/MIP.properties
 
-java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/smartPoints200.txt ../input/10/200/p200_4.txt ../output/oneSSA/10/200/solution4.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/200/smartPoints200.txt ../input/10/200/p200_4.txt ../output/oneSSA/10/200/solution4.txt ../input/MIP.properties
 
-java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/smartPoints200.txt ../input/10/200/p200_5.txt ../output/oneSSA/10/200/solution5.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv1 ../input/10/200/smartPoints200.txt ../input/10/200/p200_5.txt ../output/oneSSA/10/200/solution5.txt ../input/MIP.properties
 
 
 javac -cp ".;%CPLEX_JAR%" SSAHv2.java
 
-java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/smartPoints200.txt ../input/10/200/p200_1.txt ../output/multipleSSA/10/200/solution1.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/200/smartPoints200.txt ../input/10/200/p200_1.txt ../output/multipleSSA/10/200/solution1.txt ../input/MIP.properties
 
-java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/smartPoints200.txt ../input/10/200/p200_2.txt ../output/multipleSSA/10/200/solution2.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/200/smartPoints200.txt ../input/10/200/p200_2.txt ../output/multipleSSA/10/200/solution2.txt ../input/MIP.properties
 
-java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/smartPoints200.txt ../input/10/200/p200_3.txt ../output/multipleSSA/10/200/solution3.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/200/smartPoints200.txt ../input/10/200/p200_3.txt ../output/multipleSSA/10/200/solution3.txt ../input/MIP.properties
 
-java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/smartPoints200.txt ../input/10/200/p200_4.txt ../output/multipleSSA/10/200/solution4.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/200/smartPoints200.txt ../input/10/200/p200_4.txt ../output/multipleSSA/10/200/solution4.txt ../input/MIP.properties
 
-java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/smartPoints200.txt ../input/10/200/p200_5.txt ../output/multipleSSA/10/200/solution5.txt ../input/MIP.properties
+java -cp ".;%CPLEX_JAR%" SSAHv2 ../input/10/200/smartPoints200.txt ../input/10/200/p200_5.txt ../output/multipleSSA/10/200/solution5.txt ../input/MIP.properties
 
 pause
