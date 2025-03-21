@@ -1,6 +1,6 @@
-Total execution time: 0.0018 minutes.
+Total execution time: 0.0019 minutes.
 
-Parcels delivered: 199 / 200
+Parcels delivered: 181 / 200
 
 ---Parcel Delivery Location---
 ID: 1001 -> 1
@@ -12,7 +12,6 @@ ID: 1006 -> 1
 ID: 1007 -> 1
 ID: 1008 -> 1
 ID: 1009 -> 1
-ID: 1010 -> 1
 ID: 1011 -> 2
 ID: 1012 -> 2
 ID: 1013 -> 2
@@ -30,16 +29,11 @@ ID: 1024 -> 3
 ID: 1025 -> 3
 ID: 1026 -> 3
 ID: 1027 -> 3
-ID: 1028 -> 3
 ID: 1030 -> 3
-ID: 1031 -> 4
-ID: 1032 -> 4
 ID: 1033 -> 4
 ID: 1034 -> 4
 ID: 1035 -> 4
 ID: 1036 -> 4
-ID: 1037 -> 4
-ID: 1038 -> 4
 ID: 1039 -> 4
 ID: 1040 -> 4
 ID: 1041 -> 5
@@ -87,20 +81,15 @@ ID: 1082 -> 9
 ID: 1083 -> 9
 ID: 1084 -> 9
 ID: 1085 -> 9
-ID: 1086 -> 9
-ID: 1087 -> 9
 ID: 1088 -> 9
 ID: 1089 -> 9
-ID: 1090 -> 9
 ID: 1091 -> 10
 ID: 1092 -> 10
 ID: 1093 -> 10
 ID: 1094 -> 10
-ID: 1095 -> 10
 ID: 1096 -> 10
 ID: 1097 -> 10
 ID: 1098 -> 10
-ID: 1099 -> 10
 ID: 1100 -> 10
 ID: 1101 -> 11
 ID: 1102 -> 11
@@ -108,10 +97,8 @@ ID: 1103 -> 11
 ID: 1104 -> 11
 ID: 1105 -> 11
 ID: 1106 -> 11
-ID: 1107 -> 11
 ID: 1108 -> 11
 ID: 1109 -> 11
-ID: 1110 -> 11
 ID: 1111 -> 12
 ID: 1112 -> 12
 ID: 1113 -> 12
@@ -130,7 +117,6 @@ ID: 1125 -> 13
 ID: 1126 -> 13
 ID: 1127 -> 13
 ID: 1128 -> 13
-ID: 1129 -> 13
 ID: 1130 -> 13
 ID: 1131 -> 14
 ID: 1132 -> 14
@@ -148,9 +134,7 @@ ID: 1143 -> 15
 ID: 1144 -> 15
 ID: 1145 -> 15
 ID: 1146 -> 15
-ID: 1147 -> 15
 ID: 1148 -> 15
-ID: 1149 -> 15
 ID: 1150 -> 15
 ID: 1151 -> 16
 ID: 1152 -> 16
@@ -181,7 +165,6 @@ ID: 1176 -> 18
 ID: 1177 -> 18
 ID: 1178 -> 18
 ID: 1179 -> 18
-ID: 1180 -> 18
 ID: 1181 -> 19
 ID: 1182 -> 19
 ID: 1183 -> 19
@@ -189,7 +172,6 @@ ID: 1184 -> 19
 ID: 1185 -> 19
 ID: 1186 -> 19
 ID: 1187 -> 19
-ID: 1188 -> 19
 ID: 1189 -> 19
 ID: 1190 -> 19
 ID: 1191 -> 20
@@ -208,33 +190,32 @@ ID: 1200 -> 20
 SmartPoint 1: 26.4
 SmartPoint 2: 20.9
 SmartPoint 3: 18.5
-SmartPoint 4: 45.3
-SmartPoint 5: 22.0
-SmartPoint 6: 41.3
-SmartPoint 7: 64.3
+SmartPoint 4: 49.0
+SmartPoint 5: 56.5
+SmartPoint 6: 16.6
+SmartPoint 7: 79.9
 SmartPoint 8: 22.0
 SmartPoint 9: 9.1
-SmartPoint 10: 48.9
-SmartPoint 11: 41.8
-SmartPoint 12: 76.5
-SmartPoint 13: 86.0
-SmartPoint 14: 33.5
-SmartPoint 15: 73.7
-SmartPoint 16: 20.1
-SmartPoint 17: 38.0
-SmartPoint 18: 41.6
-SmartPoint 19: 95.5
-SmartPoint 20: 59.8
+SmartPoint 10: 114.2
+SmartPoint 11: 43.5
+SmartPoint 12: 45.8
+SmartPoint 13: 65.8
+SmartPoint 14: 51.1
+SmartPoint 15: 143.9
+SmartPoint 16: 67.0
+SmartPoint 17: 164.4
+SmartPoint 18: 76.9
+SmartPoint 19: 31.3
+SmartPoint 20: 62.8
 ------------------------------
 
 ------------Routes------------
-Route 1: 0->16->17->0
-Route 2: 0->1->4->15->0
-Route 3: 0->2->11->20->0
-Route 4: 0->3->18->0
-Route 5: 0->5->6->7->13->0
-Route 6: 0->8->10->12->19->0
-Route 7: 0->9->14->0
+Route 1: 0->1->5->7->10->15->17->0
+Route 2: 0->2->14->18->0
+Route 3: 0->3->4->20->0
+Route 4: 0->6->11->13->0
+Route 5: 0->8->12->16->0
+Route 6: 0->9->19->0
 ------------------------------
 
-Transportation Cost: 773.5
+Transportation Cost: 760.0
