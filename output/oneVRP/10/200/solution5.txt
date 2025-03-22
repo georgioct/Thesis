@@ -1,4 +1,4 @@
-Total execution time: 60.0039 minutes.
+Total execution time: 60.0034 minutes.
 
 Transportation Cost: 407.7
 
@@ -190,20 +190,20 @@ ID: 1200 -> 10
 Total number of parcels delivered: 183 / 200
 
 Arriving time on each SP:
-Smart Point 1: 50.0
+Smart Point 1: 55.0
 Smart Point 2: 21.0
 Smart Point 3: 57.0
-Smart Point 4: 21.0
+Smart Point 4: 82.0
 Smart Point 5: 46.0
 Smart Point 6: 17.0
 Smart Point 7: 76.0
-Smart Point 8: 81.0
+Smart Point 8: 22.0
 Smart Point 9: 10.0
 Smart Point 10: 86.0
 
 Total number of vehicles used: 4
 
 Route 1: 0->2->3->10->0
-Route 2: 0->4->1->8->0
-Route 3: 0->6->5->7->0
+Route 2: 0->6->5->7->0
+Route 3: 0->8->1->4->0
 Route 4: 0->9->0

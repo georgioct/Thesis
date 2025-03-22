@@ -192,19 +192,19 @@ SmartPoint 1: 26.4
 SmartPoint 2: 20.9
 SmartPoint 3: 18.5
 SmartPoint 4: 53.3
-SmartPoint 5: 52.9
+SmartPoint 5: 22.0
 SmartPoint 6: 51.2
-SmartPoint 7: 86.3
-SmartPoint 8: 22.0
+SmartPoint 7: 60.1
+SmartPoint 8: 83.0
 SmartPoint 9: 76.7
-SmartPoint 10: 58.9
+SmartPoint 10: 55.0
 ------------------------------
 
 ------------Routes------------
-Route 1: 0->8->10->0
-Route 2: 0->1->4->0
-Route 3: 0->2->6->9->0
-Route 4: 0->3->5->7->0
+Route 1: 0->1->4->8->0
+Route 2: 0->2->6->9->0
+Route 3: 0->3->7->0
+Route 4: 0->5->10->0
 ------------------------------
 
-Transportation Cost: 426.8
+Transportation Cost: 428.0

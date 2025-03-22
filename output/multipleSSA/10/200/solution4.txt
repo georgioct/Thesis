@@ -205,20 +205,20 @@ ID: 1200 -> 10
 SmartPoint 1: 26.4
 SmartPoint 2: 20.9
 SmartPoint 3: 18.5
-SmartPoint 4: 51.3
+SmartPoint 4: 20.4
 SmartPoint 5: 52.9
 SmartPoint 6: 51.2
 SmartPoint 7: 88.3
-SmartPoint 8: 84.8
-SmartPoint 9: 86.6
-SmartPoint 10: 17.4
+SmartPoint 8: 52.1
+SmartPoint 9: 78.7
+SmartPoint 10: 52.2
 ------------------------------
 
 ------------Routes------------
-Route 1: 0->1->4->9->0
-Route 2: 0->2->6->8->0
-Route 3: 0->10->0
-Route 4: 0->3->5->7->0
+Route 1: 0->1->10->0
+Route 2: 0->2->6->9->0
+Route 3: 0->3->5->7->0
+Route 4: 0->4->8->0
 ------------------------------
 
-Transportation Cost: 426.3
+Transportation Cost: 420.5

@@ -1,4 +1,4 @@
-Total execution time: 0.002 minutes.
+Total execution time: 0.0028 minutes.
 
 Parcels delivered: 317 / 400
 

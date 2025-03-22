@@ -1,6 +1,6 @@
-Total execution time: 4.0517 minutes.
+Total execution time: 2.7946 minutes.
 
-Transportation Cost: 411.7
+Transportation Cost: 413.7
 
 Parcel Delivery Location:
 ID: 1001 -> 1
@@ -202,20 +202,20 @@ ID: 1199 -> 10
 Total number of parcels delivered: 195 / 200
 
 Arriving time on each SP:
-Smart Point 1: 50.0
-Smart Point 2: 97.0
-Smart Point 3: 19.0
-Smart Point 4: 75.0
-Smart Point 5: 57.0
-Smart Point 6: 406.0
-Smart Point 7: 17.0
-Smart Point 8: 439.0
+Smart Point 1: 51.0
+Smart Point 2: 21.0
+Smart Point 3: 91.0
+Smart Point 4: 21.0
+Smart Point 5: 53.0
+Smart Point 6: 55.0
+Smart Point 7: 89.0
+Smart Point 8: 22.0
 Smart Point 9: 10.0
-Smart Point 10: 18.0
+Smart Point 10: 77.0
 
 Total number of vehicles used: 4
 
-Route 1: 0->3->5->2->0
-Route 2: 0->7->6->8->0
-Route 3: 0->9->0
-Route 4: 0->10->1->4->0
+Route 1: 0->2->5->7->0
+Route 2: 0->4->1->10->0
+Route 3: 0->8->6->3->0
+Route 4: 0->9->0
