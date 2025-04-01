@@ -1,0 +1,27 @@
+Total execution time: 0.0018 minutes.
+
+Parcels delivered: 10 / 10
+
+---Parcel Delivery Location---
+ID: 1001 -> 1
+ID: 1002 -> 1
+ID: 1003 -> 1
+ID: 1004 -> 1
+ID: 1005 -> 1
+ID: 1006 -> 1
+ID: 1007 -> 1
+ID: 1008 -> 1
+ID: 1009 -> 1
+ID: 1010 -> 2
+------------------------------
+
+--------Arriving Times--------
+SmartPoint 1: 5.0
+SmartPoint 2: 24.0
+------------------------------
+
+------------Routes------------
+Route 1: 0->1->2->0
+------------------------------
+
+Transportation Cost: 70.0
