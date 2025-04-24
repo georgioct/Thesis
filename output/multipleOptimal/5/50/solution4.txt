@@ -1,0 +1,68 @@
+Total execution time: 0.0063 minutes.
+
+Optimal solution found: 144.2
+Transportation Cost: 139.2
+Penalty Cost: 5.0
+
+Parcel Delivery Location:
+ID: 1001 -> 5
+ID: 1003 -> 1
+ID: 1004 -> 5
+ID: 1005 -> 2
+ID: 1006 -> 5
+ID: 1007 -> 2
+ID: 1008 -> 5
+ID: 1009 -> 5
+ID: 1010 -> 2
+ID: 1011 -> 2
+ID: 1012 -> 4
+ID: 1013 -> 4
+ID: 1014 -> 5
+ID: 1015 -> 2
+ID: 1016 -> 1
+ID: 1017 -> 5
+ID: 1018 -> 2
+ID: 1019 -> 2
+ID: 1020 -> 2
+ID: 1021 -> 5
+ID: 1022 -> 5
+ID: 1023 -> 2
+ID: 1024 -> 5
+ID: 1025 -> 5
+ID: 1026 -> 5
+ID: 1027 -> 5
+ID: 1028 -> 1
+ID: 1029 -> 1
+ID: 1030 -> 4
+ID: 1031 -> 1
+ID: 1032 -> 4
+ID: 1033 -> 1
+ID: 1034 -> 2
+ID: 1035 -> 4
+ID: 1036 -> 1
+ID: 1037 -> 4
+ID: 1038 -> 2
+ID: 1039 -> 5
+ID: 1040 -> 5
+ID: 1041 -> 1
+ID: 1042 -> 2
+ID: 1043 -> 5
+ID: 1044 -> 1
+ID: 1045 -> 5
+ID: 1046 -> 2
+ID: 1047 -> 2
+ID: 1048 -> 4
+ID: 1049 -> 1
+ID: 1050 -> 4
+
+Total number of parcels delivered: 49 / 50
+
+Arriving time on each SP:
+Smart Point 1: 91.0
+Smart Point 2: 21.0
+Smart Point 4: 110.0
+Smart Point 5: 53.0
+
+Total number of vehicles used: 1
+
+Route 1: 0->2->5->1->4->0
