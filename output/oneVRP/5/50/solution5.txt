@@ -1,6 +1,6 @@
-Total execution time: 0.7372 minutes.
+Total execution time: 0.0017 minutes.
 
-Transportation Cost: 225.1
+Transportation Cost: 153.5
 
 Parcel Delivery Location:
 ID: 1001 -> 4
@@ -13,7 +13,6 @@ ID: 1007 -> 1
 ID: 1008 -> 1
 ID: 1009 -> 4
 ID: 1010 -> 4
-ID: 1011 -> 3
 ID: 1012 -> 1
 ID: 1013 -> 3
 ID: 1014 -> 2
@@ -21,12 +20,10 @@ ID: 1015 -> 1
 ID: 1016 -> 5
 ID: 1017 -> 1
 ID: 1018 -> 2
-ID: 1019 -> 3
 ID: 1020 -> 5
 ID: 1021 -> 5
 ID: 1022 -> 4
 ID: 1023 -> 5
-ID: 1024 -> 2
 ID: 1025 -> 4
 ID: 1026 -> 3
 ID: 1027 -> 5
@@ -36,7 +33,6 @@ ID: 1030 -> 5
 ID: 1031 -> 1
 ID: 1032 -> 5
 ID: 1033 -> 2
-ID: 1034 -> 2
 ID: 1035 -> 4
 ID: 1036 -> 5
 ID: 1037 -> 1
@@ -44,7 +40,6 @@ ID: 1038 -> 1
 ID: 1039 -> 1
 ID: 1040 -> 5
 ID: 1041 -> 4
-ID: 1042 -> 3
 ID: 1044 -> 4
 ID: 1045 -> 3
 ID: 1046 -> 3
@@ -53,16 +48,15 @@ ID: 1048 -> 1
 ID: 1049 -> 1
 ID: 1050 -> 1
 
-Total number of parcels delivered: 49 / 50
+Total number of parcels delivered: 44 / 50
 
 Arriving time on each SP:
-Smart Point 1: 74.0
-Smart Point 2: 21.0
+Smart Point 1: 71.0
+Smart Point 2: 123.0
 Smart Point 3: 19.0
-Smart Point 4: 96.0
-Smart Point 5: 42.0
+Smart Point 4: 93.0
+Smart Point 5: 39.0
 
-Total number of vehicles used: 2
+Total number of vehicles used: 1
 
-Route 1: 0->2->0
-Route 2: 0->3->5->1->4->0
+Route 1: 0->3->5->1->4->2->0

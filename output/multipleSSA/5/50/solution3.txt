@@ -1,38 +1,38 @@
-Total execution time: 0.0028 minutes.
+Total execution time: 0.0019 minutes.
 
 Parcels delivered: 50 / 50
 
 ---Parcel Delivery Location---
 ID: 1001 -> 1
 ID: 1002 -> 1
-ID: 1003 -> 1
+ID: 1003 -> 2
 ID: 1004 -> 1
 ID: 1005 -> 1
 ID: 1006 -> 1
 ID: 1007 -> 1
 ID: 1008 -> 1
 ID: 1009 -> 1
-ID: 1010 -> 1
+ID: 1010 -> 2
 ID: 1011 -> 2
 ID: 1012 -> 2
 ID: 1013 -> 2
-ID: 1014 -> 2
+ID: 1014 -> 3
 ID: 1015 -> 2
 ID: 1016 -> 2
 ID: 1017 -> 2
 ID: 1018 -> 2
 ID: 1019 -> 2
 ID: 1020 -> 2
-ID: 1021 -> 3
-ID: 1022 -> 3
+ID: 1021 -> 4
+ID: 1022 -> 5
 ID: 1023 -> 3
 ID: 1024 -> 3
 ID: 1025 -> 3
 ID: 1026 -> 3
-ID: 1027 -> 3
-ID: 1028 -> 3
+ID: 1027 -> 2
+ID: 1028 -> 1
 ID: 1029 -> 3
-ID: 1030 -> 3
+ID: 1030 -> 4
 ID: 1031 -> 4
 ID: 1032 -> 4
 ID: 1033 -> 4
@@ -51,16 +51,16 @@ ID: 1045 -> 5
 ID: 1046 -> 5
 ID: 1047 -> 5
 ID: 1048 -> 5
-ID: 1049 -> 5
-ID: 1050 -> 5
+ID: 1049 -> 1
+ID: 1050 -> 1
 ------------------------------
 
 --------Arriving Times--------
 SmartPoint 1: 26.4
-SmartPoint 2: 62.2
-SmartPoint 3: 91.5
-SmartPoint 4: 124.0
-SmartPoint 5: 151.7
+SmartPoint 2: 63.2
+SmartPoint 3: 94.5
+SmartPoint 4: 123.0
+SmartPoint 5: 152.7
 ------------------------------
 
 ------------Routes------------

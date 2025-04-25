@@ -1,6 +1,6 @@
-Total execution time: 0.0023 minutes.
+Total execution time: 0.0017 minutes.
 
-Parcels delivered: 49 / 50
+Parcels delivered: 47 / 50
 
 ---Parcel Delivery Location---
 ID: 1001 -> 1
@@ -30,9 +30,7 @@ ID: 1024 -> 3
 ID: 1025 -> 3
 ID: 1026 -> 3
 ID: 1027 -> 3
-ID: 1028 -> 3
 ID: 1029 -> 3
-ID: 1030 -> 3
 ID: 1031 -> 4
 ID: 1032 -> 4
 ID: 1033 -> 4
@@ -58,8 +56,8 @@ ID: 1050 -> 5
 SmartPoint 1: 26.4
 SmartPoint 2: 62.2
 SmartPoint 3: 91.5
-SmartPoint 4: 124.0
-SmartPoint 5: 150.7
+SmartPoint 4: 122.0
+SmartPoint 5: 148.7
 ------------------------------
 
 ------------Routes------------

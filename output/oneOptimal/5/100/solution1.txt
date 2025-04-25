@@ -1,23 +1,20 @@
-Total execution time: 0.0155 minutes.
+Total execution time: 0.0196 minutes.
 
-Optimal solution found: 227.4
+Optimal solution found: 292.4
 Transportation Cost: 227.4
-Penalty Cost: 0.0
+Penalty Cost: 65.0
 
 Parcel Delivery Location:
-ID: 1001 -> 5
+ID: 1001 -> 1
 ID: 1002 -> 1
 ID: 1003 -> 1
-ID: 1004 -> 3
+ID: 1004 -> 1
 ID: 1005 -> 1
-ID: 1006 -> 3
+ID: 1006 -> 1
 ID: 1007 -> 1
-ID: 1008 -> 2
-ID: 1009 -> 2
-ID: 1010 -> 1
-ID: 1011 -> 4
+ID: 1009 -> 1
+ID: 1011 -> 2
 ID: 1012 -> 2
-ID: 1013 -> 1
 ID: 1014 -> 2
 ID: 1015 -> 2
 ID: 1016 -> 2
@@ -28,33 +25,31 @@ ID: 1020 -> 2
 ID: 1021 -> 3
 ID: 1022 -> 3
 ID: 1023 -> 3
-ID: 1024 -> 1
+ID: 1024 -> 3
 ID: 1025 -> 3
 ID: 1026 -> 3
 ID: 1027 -> 3
 ID: 1028 -> 3
 ID: 1029 -> 3
 ID: 1030 -> 3
-ID: 1031 -> 1
-ID: 1032 -> 2
+ID: 1031 -> 4
+ID: 1032 -> 4
 ID: 1033 -> 4
-ID: 1034 -> 5
+ID: 1034 -> 4
 ID: 1035 -> 4
 ID: 1036 -> 4
 ID: 1037 -> 4
-ID: 1038 -> 3
+ID: 1038 -> 4
 ID: 1039 -> 4
-ID: 1040 -> 2
-ID: 1041 -> 2
+ID: 1040 -> 4
+ID: 1041 -> 5
 ID: 1042 -> 5
-ID: 1043 -> 4
+ID: 1043 -> 5
 ID: 1044 -> 5
-ID: 1045 -> 5
-ID: 1046 -> 3
-ID: 1047 -> 2
+ID: 1046 -> 5
+ID: 1047 -> 5
 ID: 1048 -> 5
-ID: 1049 -> 2
-ID: 1050 -> 1
+ID: 1050 -> 5
 ID: 1051 -> 1
 ID: 1052 -> 1
 ID: 1053 -> 1
@@ -62,9 +57,7 @@ ID: 1054 -> 1
 ID: 1055 -> 1
 ID: 1056 -> 1
 ID: 1057 -> 1
-ID: 1058 -> 2
 ID: 1059 -> 1
-ID: 1060 -> 1
 ID: 1061 -> 2
 ID: 1062 -> 2
 ID: 1063 -> 2
@@ -72,48 +65,46 @@ ID: 1064 -> 2
 ID: 1065 -> 2
 ID: 1066 -> 2
 ID: 1067 -> 2
-ID: 1068 -> 1
-ID: 1069 -> 5
-ID: 1070 -> 5
+ID: 1068 -> 2
+ID: 1069 -> 2
+ID: 1070 -> 2
 ID: 1071 -> 3
 ID: 1072 -> 3
-ID: 1073 -> 5
-ID: 1074 -> 1
+ID: 1073 -> 3
+ID: 1074 -> 3
 ID: 1075 -> 3
-ID: 1076 -> 5
-ID: 1077 -> 2
+ID: 1077 -> 3
 ID: 1078 -> 3
-ID: 1079 -> 1
+ID: 1079 -> 3
 ID: 1080 -> 3
-ID: 1081 -> 3
+ID: 1081 -> 4
 ID: 1082 -> 4
-ID: 1083 -> 1
-ID: 1084 -> 5
+ID: 1083 -> 4
+ID: 1084 -> 4
 ID: 1085 -> 4
 ID: 1086 -> 4
-ID: 1087 -> 2
+ID: 1087 -> 4
 ID: 1088 -> 4
-ID: 1089 -> 1
-ID: 1090 -> 2
+ID: 1089 -> 4
+ID: 1090 -> 4
 ID: 1091 -> 5
-ID: 1092 -> 1
-ID: 1093 -> 2
-ID: 1094 -> 2
-ID: 1095 -> 5
-ID: 1096 -> 3
+ID: 1092 -> 5
+ID: 1093 -> 5
+ID: 1094 -> 5
+ID: 1096 -> 5
 ID: 1097 -> 5
 ID: 1098 -> 5
 ID: 1099 -> 5
-ID: 1100 -> 1
+ID: 1100 -> 5
 
-Total number of parcels delivered: 100 / 100
+Total number of parcels delivered: 91 / 100
 
 Arriving time on each SP:
 Smart Point 1: 27.0
 Smart Point 2: 21.0
-Smart Point 3: 442.0
-Smart Point 4: 61.0
-Smart Point 5: 67.0
+Smart Point 3: 90.0
+Smart Point 4: 52.0
+Smart Point 5: 58.0
 
 Total number of vehicles used: 2
 

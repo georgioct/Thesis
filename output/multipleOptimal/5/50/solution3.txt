@@ -1,4 +1,4 @@
-Total execution time: 0.0046 minutes.
+Total execution time: 0.0034 minutes.
 
 Optimal solution found: 153.5
 Transportation Cost: 153.5
@@ -7,7 +7,7 @@ Penalty Cost: 0.0
 Parcel Delivery Location:
 ID: 1001 -> 1
 ID: 1002 -> 1
-ID: 1003 -> 1
+ID: 1003 -> 2
 ID: 1004 -> 1
 ID: 1005 -> 1
 ID: 1006 -> 1
@@ -15,17 +15,17 @@ ID: 1007 -> 1
 ID: 1008 -> 1
 ID: 1009 -> 1
 ID: 1010 -> 2
-ID: 1011 -> 1
+ID: 1011 -> 2
 ID: 1012 -> 2
 ID: 1013 -> 2
-ID: 1014 -> 2
+ID: 1014 -> 3
 ID: 1015 -> 2
 ID: 1016 -> 2
 ID: 1017 -> 2
 ID: 1018 -> 2
 ID: 1019 -> 2
 ID: 1020 -> 2
-ID: 1021 -> 4
+ID: 1021 -> 3
 ID: 1022 -> 5
 ID: 1023 -> 3
 ID: 1024 -> 3
@@ -61,9 +61,9 @@ Total number of parcels delivered: 50 / 50
 Arriving time on each SP:
 Smart Point 1: 74.0
 Smart Point 2: 21.0
-Smart Point 3: 131.0
-Smart Point 4: 53.0
-Smart Point 5: 106.0
+Smart Point 3: 129.0
+Smart Point 4: 54.0
+Smart Point 5: 104.0
 
 Total number of vehicles used: 1
 

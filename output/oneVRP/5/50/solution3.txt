@@ -1,4 +1,4 @@
-Total execution time: 0.0025 minutes.
+Total execution time: 0.0017 minutes.
 
 Transportation Cost: 153.5
 
@@ -19,7 +19,6 @@ ID: 1013 -> 2
 ID: 1014 -> 2
 ID: 1015 -> 2
 ID: 1016 -> 2
-ID: 1017 -> 2
 ID: 1018 -> 2
 ID: 1019 -> 2
 ID: 1020 -> 2
@@ -29,10 +28,7 @@ ID: 1023 -> 3
 ID: 1024 -> 3
 ID: 1025 -> 3
 ID: 1026 -> 3
-ID: 1027 -> 3
-ID: 1028 -> 3
 ID: 1029 -> 3
-ID: 1030 -> 3
 ID: 1031 -> 4
 ID: 1032 -> 4
 ID: 1033 -> 4
@@ -54,14 +50,14 @@ ID: 1048 -> 5
 ID: 1049 -> 5
 ID: 1050 -> 5
 
-Total number of parcels delivered: 50 / 50
+Total number of parcels delivered: 46 / 50
 
 Arriving time on each SP:
-Smart Point 1: 70.0
+Smart Point 1: 69.0
 Smart Point 2: 21.0
-Smart Point 3: 125.0
-Smart Point 4: 51.0
-Smart Point 5: 101.0
+Smart Point 3: 124.0
+Smart Point 4: 50.0
+Smart Point 5: 100.0
 
 Total number of vehicles used: 1
 

@@ -1,8 +1,8 @@
-Total execution time: 0.0184 minutes.
+Total execution time: 0.0019 minutes.
 
-Transportation Cost: 227.4
+Parcels delivered: 91 / 100
 
-Parcel Delivery Location:
+---Parcel Delivery Location---
 ID: 1001 -> 1
 ID: 1002 -> 1
 ID: 1003 -> 1
@@ -12,7 +12,6 @@ ID: 1006 -> 1
 ID: 1007 -> 1
 ID: 1008 -> 1
 ID: 1009 -> 1
-ID: 1010 -> 1
 ID: 1011 -> 2
 ID: 1012 -> 2
 ID: 1013 -> 2
@@ -58,11 +57,8 @@ ID: 1052 -> 1
 ID: 1053 -> 1
 ID: 1054 -> 1
 ID: 1055 -> 1
-ID: 1056 -> 1
-ID: 1057 -> 1
 ID: 1058 -> 1
 ID: 1059 -> 1
-ID: 1060 -> 1
 ID: 1061 -> 2
 ID: 1062 -> 2
 ID: 1063 -> 2
@@ -70,7 +66,6 @@ ID: 1064 -> 2
 ID: 1065 -> 2
 ID: 1066 -> 2
 ID: 1067 -> 2
-ID: 1068 -> 2
 ID: 1069 -> 2
 ID: 1070 -> 2
 ID: 1071 -> 3
@@ -80,7 +75,6 @@ ID: 1074 -> 3
 ID: 1075 -> 3
 ID: 1076 -> 3
 ID: 1077 -> 3
-ID: 1078 -> 3
 ID: 1079 -> 3
 ID: 1080 -> 3
 ID: 1081 -> 4
@@ -100,17 +94,19 @@ ID: 1094 -> 5
 ID: 1095 -> 5
 ID: 1096 -> 5
 ID: 1100 -> 5
+------------------------------
 
-Total number of parcels delivered: 97 / 100
+--------Arriving Times--------
+SmartPoint 1: 26.4
+SmartPoint 2: 20.9
+SmartPoint 3: 59.2
+SmartPoint 4: 51.3
+SmartPoint 5: 92.6
+------------------------------
 
-Arriving time on each SP:
-Smart Point 1: 50.0
-Smart Point 2: 21.0
-Smart Point 3: 91.0
-Smart Point 4: 21.0
-Smart Point 5: 59.0
+------------Routes------------
+Route 1: 0->1->4->0
+Route 2: 0->2->3->5->0
+------------------------------
 
-Total number of vehicles used: 2
-
-Route 1: 0->2->5->3->0
-Route 2: 0->4->1->0
+Transportation Cost: 232.3
