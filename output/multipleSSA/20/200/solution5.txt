@@ -192,32 +192,32 @@ ID: 1200 -> 20
 SmartPoint 1: 26.4
 SmartPoint 2: 20.9
 SmartPoint 3: 18.5
-SmartPoint 4: 20.4
-SmartPoint 5: 56.5
-SmartPoint 6: 43.5
-SmartPoint 7: 50.3
-SmartPoint 8: 67.1
-SmartPoint 9: 85.3
-SmartPoint 10: 53.8
-SmartPoint 11: 10.0
-SmartPoint 12: 17.3
-SmartPoint 13: 51.0
-SmartPoint 14: 77.1
-SmartPoint 15: 80.0
-SmartPoint 16: 26.0
-SmartPoint 17: 99.5
-SmartPoint 18: 47.4
-SmartPoint 19: 130.9
-SmartPoint 20: 68.6
+SmartPoint 4: 44.3
+SmartPoint 5: 22.0
+SmartPoint 6: 16.6
+SmartPoint 7: 47.4
+SmartPoint 8: 40.2
+SmartPoint 9: 9.1
+SmartPoint 10: 39.3
+SmartPoint 11: 66.1
+SmartPoint 12: 36.5
+SmartPoint 13: 58.9
+SmartPoint 14: 83.8
+SmartPoint 15: 113.0
+SmartPoint 16: 64.6
+SmartPoint 17: 79.5
+SmartPoint 18: 38.9
+SmartPoint 19: 56.5
+SmartPoint 20: 75.5
 ------------------------------
 
 ------------Routes------------
-Route 1: 0->1->5->9->0
-Route 2: 0->2->10->14->0
-Route 3: 0->3->6->8->0
-Route 4: 0->4->7->0
-Route 5: 0->11->16->18->20->0
-Route 6: 0->12->13->15->17->19->0
+Route 1: 0->1->4->11->0
+Route 2: 0->2->18->0
+Route 3: 0->3->10->13->0
+Route 4: 0->5->7->14->15->0
+Route 5: 0->6->8->16->17->0
+Route 6: 0->9->12->19->20->0
 ------------------------------
 
-Transportation Cost: 745.6
+Transportation Cost: 710.8
